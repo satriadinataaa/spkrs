@@ -107,11 +107,11 @@
 		}
 	?>
 
-    <div>    <!-- As a heading -->
-        <nav class="navbar navbar-light bg-primary ">
-            <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1 text-white p-3">SPK Rumah Sakit</span>
-            </div>
+	<div>    <!-- As a heading -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="<?= base_url()?>">SPK Rumah Sakit</a>
+        </div>
         </nav>
     </div>
 
@@ -679,14 +679,16 @@
 									<table id="aras_ki" class="table  table-bordered mt-3">
 											<thead>
 												<tr>	
+													<th>Nomor</th>
 													<th>Rumah Sakit</th>
 													<th>Alternative</th>
 													<th>Ki</th>
 												</tr>
 											</thead>
 											<tbody>
-											<?php for($i = 0; $i < count($KI) -1;$i++){?>
+											<?php for($i = 0; $i < count($KI);$i++){?>
 													<tr>	
+														<td><?= $i+1 ?></td>
 														<td><?= $KI[$i]['nama'] ?></td>
 														<td><?= $KI[$i]['alt'] ?></td>
 														<td><?= $KI[$i]['KI'] ?></td>

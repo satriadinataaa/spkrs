@@ -14,10 +14,16 @@
 
 
     <div>    <!-- As a heading -->
-        <nav class="navbar navbar-light bg-primary ">
-            <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1 text-white p-3">SPK Rumah Sakit</span>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="<?= base_url()?>">SPK Rumah Sakit</a>
+           
+            <div class="mr-sm-2" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="<?= base_url('Hospital')?>">Insert Data</a>
+                </div>
             </div>
+        </div>
         </nav>
     </div>
 
@@ -26,7 +32,7 @@
         <form method="POST" action="<?= base_url('Home/result_page')?>">
             <div class="mb-1">
                 <label for="exampleInputEmail1" class="form-label">Bobot Dalam Persen (Jarak) </label>
-                <input type="number" class="form-control" name="jarak" required>
+                <input type="number" class="form-control" name="jarak" placeholder="Contoh : 25.5" required>
             </div>
             <!-- <select class="form-select mb-4" name="jarak_cat">
                 <option value="benefit">Benefit</option>
@@ -34,7 +40,7 @@
             </select> -->
             <div class="mb-1">
                 <label for="exampleInputEmail1" class="form-label">Bobot Dalam Persen (Biaya) </label>
-                <input type="number" class="form-control" name="biaya" required>
+                <input type="number" class="form-control" name="biaya" placeholder="Contoh : 25.5" required>
             </div>
             <!-- <select class="form-select mb-4" name="biaya_cat">
                 <option value="benefit">Benefit</option>
@@ -42,7 +48,7 @@
             </select> -->
             <div class="mb-1">
                 <label for="exampleInputEmail1" class="form-label">Bobot Dalam Persen (Pelayanan) </label>
-                <input type="number" class="form-control" name="pelayanan" required>
+                <input type="number" class="form-control" name="pelayanan" placeholder="Contoh : 25.5" required>
             </div>
             <!-- <select class="form-select mb-4" name="pelayanan_cat">
                 <option value="benefit">Benefit</option>
@@ -50,7 +56,7 @@
             </select> -->
             <div class="mb-1">
                 <label for="exampleInputEmail1" class="form-label">Bobot Dalam Persen (Fasilitas) </label>
-                <input type="number" class="form-control" name="fasilitas" required>
+                <input type="number" class="form-control" name="fasilitas" placeholder="Contoh : 25.5" required>
             </div>
             <!-- <select class="form-select mb-4" name="fasilitas_cat">
                 <option value="benefit">Benefit</option>
